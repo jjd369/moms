@@ -1,0 +1,47 @@
+#name{
+    margin-top:120px;
+    padding:10% 0 10%;
+}
+#name .kor{
+    font-size: 7vw;
+    text-align: center;
+}
+.policy_content{
+    background:#eee;    
+    padding:10% 0 10%;
+}
+.policy_content .con{
+    font-family: 'Noto Sans KR';
+    width:80%;
+    padding:5% 3% 5% 3%;
+    margin:0 auto;
+    background:#fff;
+    border-radius:5vw;
+    box-shadow: 0px 2px 20px #E0E0E0;
+}
+.policy_content .con h3{
+    padding:5% 4% 5% 4%;
+    font-size:5vw;
+}
+.policy_content .con p{
+    padding:3%;
+    font-size:3vw;
+}
+.policy_content .con ol > li{
+    padding:5%;
+    list-style: decimal;
+    font-size:3vw;
+    list-style-position: inside;
+}
+.policy_content .con ul > li{
+    padding:3% 7% 3% 7%;
+    list-style: circle;
+    font-size:3vw;
+    list-style-position: inside;
+}
+/* width 735px 미만일때 */
+@media all and (max-width:735px){
+    #name{
+        margin-top:62px;
+    }
+}

@@ -1,0 +1,144 @@
+/* index visual */
+#visual{
+    padding-top:120px;
+    width:100%;
+    height:60vw;
+    background-color: #000;
+    position:relative;
+}
+    /* visual slide */
+#visual .v_slider{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+}
+#visual .v_slider div{
+    width:100%;
+    height:100%;
+}
+#visual .v_slider div a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+#visual .v_slider div a img{
+    width:100%;
+    height:100%;
+}
+    /* visual slide btn */
+#visual .left,
+#visual .right{
+    display:block;
+    width:10vw;
+    height:10vw;
+    position:absolute;
+    top:50%;
+    cursor:pointer;
+    opacity:0.5
+}
+#visual .left{
+    left:2%;
+}
+#visual .right{
+    right:2%;
+}
+#visual .left img,
+#visual .right img{
+    width:100%;
+}
+    /* visual slide btn hover */
+#visual .left:hover,
+#visual .right:hover{
+    opacity:1;
+}
+/* content */
+    /* con1 */
+#content .con1 > div{
+    width:50%;
+    height:100%;
+    float:left;
+}
+#content .con1 > div > a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+#content .con1 > div > a img{
+    width:100%;
+}
+
+    /* con2 */
+#content .con2 {
+    width:100%;
+    background-color: #eee;
+    padding: 5% 0 5%;
+}
+        /* con2 title */
+#content .con2 .product_tit{
+    width:50%;
+    padding:2% 0 2%;
+    margin: 0 auto;
+}
+#content .con2 .product_tit a{
+    display:block;
+    width:50%;
+    height:100%;
+    float:left;
+}
+#content .con2 .product_tit a img{
+    width:100%;
+}
+        /* con2 list */
+#content .con2 .product_list {
+    width:90%;
+    margin:0 auto;
+}
+#content .con2 .product_list:last-child{
+    display:none;
+}
+#content .con2 .product_list li{
+    display:block;
+    width:100%;
+    text-align:center;
+    overflow:hidden;
+    margin:5% 0 5%}
+#content .con2 .product_list li a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+#content .con2 .product_list li a img{
+    width:100%;
+}
+
+/* width 735px 미만일때 */
+@media all and (max-width:735px){
+    #visual{
+        padding-top:62px;
+    }	
+    #visual .v_slider div{
+        width:100%;
+        height:100%;
+    }
+    #visual .v_slider div a{
+        display:block;
+        width:100%;
+        height:100%
+    }
+    #visual .v_slider div a img{
+        width:100%;
+        height:100%;
+    }
+    #content .con2 .product_more{
+        width:25px;
+        height:25px;
+    }
+    #content .con2 .product_more a{
+        background-size:100% 100%;
+    }
+}
+
+
+
+
+

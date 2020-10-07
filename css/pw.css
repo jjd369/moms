@@ -1,0 +1,79 @@
+/* pw title */
+#name{
+    margin-top:120px;
+    padding:10% 0 10%;
+}
+#name .kor{
+    font-size: 7vw;
+    text-align: center;
+}
+/* content */
+.pw_content{
+    background:#eee;
+}
+.pw_content .con{
+    width: 80%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    flex-direction:column;
+    width:80%;
+    padding:5% 3% 5% 3%;
+    margin:0 auto;
+    background:#fff;
+    border-radius:5vw;
+    box-shadow: 3px 3px 20px #E0E0E0;
+}    
+/* content title */
+.pw_content .con h3{
+    padding:5% 4% 5% 4%;
+    font-size:5vw;
+}
+/* content notice*/
+.notice{
+    font-family: 'Noto Sans KR';
+    width:80%;
+    margin:0 auto;
+    font-size:3vw;
+    margin-bottom:3%;
+    padding-top:3%;
+}
+/* 아이디 입력, 확인 버튼 */
+.pw_content input,
+.pw_content button{
+    padding:3%;
+    border:1px solid #aaa;
+    border-radius:2vw;
+    font-size:3vw;
+    background:#fff;
+}   
+.pw_content input,
+.pw_content label,
+.pw_content button{
+    margin-top:3%;
+}
+.pw_content label{
+    text-indent: 5%;
+    font-size: 3vw;
+}
+.pw_content button{
+    color:#fff;
+    background:#4c321a;
+    font-family: 'Jalnan';
+}
+/* 뒤로가기 */
+.back_btn_wrap{
+    padding:5% 0 5%;
+    text-align:center;
+}
+@media all and (max-width:735px){
+    #name{
+        margin-top:62px;
+    }
+}

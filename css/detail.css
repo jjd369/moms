@@ -1,0 +1,180 @@
+/* content title */
+.name {
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  flex-direction:column;
+
+  padding:5% 0 5%;
+}
+.name .kor {
+  font-size: 7vw;
+  text-align: center;
+  }
+.name .eng {
+  font-size: 5vw;
+  text-align: center;
+  padding-top:3%;
+}
+/* content slide */
+#content_slide {
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow: hidden;
+  padding-top:20%;
+}
+/* content_slide wrap */
+.content_slide_wrap{
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+  /* content_slide slide */
+.slider{
+  height:100%;
+  float:left;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  flex-direction:column;
+}
+  /* slider content 슬라이더 내용 */
+#content{
+  position: relative;
+}
+  /* slider 내용 이미지 */
+#content #image{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+  align-items: center;
+}
+#content #image img{
+  width:65%
+}
+  /* slider 내용 텍스트 */
+#content .sub{
+  width: 50%;
+  font-family: 'Noto Sans KR';
+  padding-bottom:5%;
+  font-size: 3vw;
+  text-align: center;
+  color: #533a23;
+  margin:0 auto;
+}
+  /* slider 칼로리표 */
+#t1,
+#t2{
+  width: 70%;
+  font-family: 'Noto Sans KR';
+  font-size: 2vw;
+  border-collapse:collapse;
+  margin:0 auto;
+}
+#t1{
+  border-top: 2px solid #533a23;
+  border-bottom:2px solid #533a23;
+}
+tr{
+  border-bottom: 2px dotted #533a23;
+  text-align: center;
+}
+.td{
+  border-right: 2px dotted #533a23;
+}
+#t1 tr:last-child{
+  border-bottom:0;
+}
+/* 주문하기 btn */
+#icon a {
+  width:12vw;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+#icon a img{
+  width:100%;
+}
+/* slide btn */
+  /* left */
+.slide_btn a:first-child{
+  width:9vw;
+  position:absolute;
+  top:60%;
+  left:2%;
+}
+  /* right */
+.slide_btn a:last-child{
+  width:9vw;
+  position:absolute;
+  top:60%;
+  right:2%;
+}
+.slide_btn a img{
+  width:100%
+}
+/* 목록 btn */
+.list_btn{
+  text-align:center;
+  padding-top:10%;
+}
+.list_btn a{
+  font-size:5vw;
+  padding:2% 3% 2% 3%;
+  background-color:#4c321a;
+  color:#fff;
+  border-radius:2vw;
+  position:absolute;
+  top:107%;
+  left:42%;
+}
+/* width 735px 미만일때 */
+@media all and (max-width:735px){
+  .slide_btn a:first-child,
+  .slide_btn a:last-child{
+    top:50%;
+  }
+  .list_btn a{
+    top:100%;
+  }
+}

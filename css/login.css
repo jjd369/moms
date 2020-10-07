@@ -1,0 +1,241 @@
+body{
+  background:#eee;
+}
+#name{
+  padding: 10% 0 10%;
+  margin-top:120px;
+  background:#fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  flex-direction:column;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#name .kor{
+  font-size: 7vw;
+  text-align: center;
+}
+.m_login{
+  text-align: center;
+  padding-top:2%;
+  font-size: 5vw;
+  }
+.login_box{
+  width:80%;
+  padding: 5% 3% 5% 3%;
+  margin:5% auto;
+  background:#fff;
+  border-radius:5vw;
+  box-shadow: 0px 2px 20px #E0E0E0;
+}
+#tab{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  padding:5% 0 5%;
+}
+#tab a{
+  display:block;
+  position:relative;
+  width:50%;
+  text-align:center;
+}
+#tab a.active{
+  color:#e60000;
+}
+#tab a:first-child::after{
+  content: ' ';
+  width: 1%;
+  height: 100%;
+  background-color: #373737;
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+}
+
+#login .login1,
+#login .login2{
+  width: 100%;
+  height: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  flex-direction:column;
+
+  -ms-flex-pack: distribute;
+  -webkit-justify-content:space-around;
+  justify-content:space-around;
+}
+#login{
+  width:80%;
+  height:30vw;
+  margin: 0 auto;
+}
+ .login1 .id,
+ .login1 .pw,
+ .login2 .name,
+ .login2 .number{
+  width: 100%;
+  border: 1px solid #aaa;
+  font-size: 3vw;
+  height: 12vw;
+  text-indent: 10%;
+  background-color: #fff;
+  font-family: 'Jalnan';
+  border-radius: 3vw;
+  box-sizing:border-box;
+}
+
+#check{
+  width: 80%;
+  margin: 0 auto;
+  height: 10vw;
+}
+.check1 , .check2{
+  float: left;
+  width: 50%;
+  height: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+  align-items: center;
+
+  font-size: 2.5vw;
+  color: #373737;
+  font-family: 'Noto Sans KR';
+}
+
+#ids,#pws{
+  zoom:2.0;
+  margin: 0 5% 0 5%;
+}
+/* login btn */
+#btn{
+  width: 80%;
+  height:25vw;
+  margin: 0 auto;
+}
+#btn .login_btn{
+  width: 100%;
+  color:#fff;
+  background: #4c321a;
+  padding:4% 5% 4% 5%;
+  text-align:center;
+  border-radius: 1vw;
+  font-size:4vw;
+}
+/* 아이디 찾기 , 회원가입 */
+#btn > div{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#btn > div >a{
+  display:block;
+  width: 100%;
+  color:#fff;
+  background: #4c321a;
+  padding:4% 5% 4% 5%;
+  text-align:center;
+  border-radius: 1vw;
+  font-size:3vw;
+  margin:3%;
+}
+/* 배달앱 */
+#rider{
+  height: 30vw;
+  background-color: #fff;
+  width:80%;
+  padding: 0 3% 0 3%;
+  margin:5% auto;
+  background:#fff;
+  border-radius:5vw;
+  box-shadow: 0px 2px 20px #E0E0E0;
+
+}
+#rider p{
+  padding:5% 0 5%;
+  font-size: 4vw;
+  text-align: center;
+}
+#rider ul {
+  width:50%;
+  margin:0 auto;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content:space-around;
+}
+#rider ul li{
+  width:30%;
+}
+#rider ul li a{
+  display:block;
+}
+#rider ul li a img{
+  width:100%;
+}
+/* width 735px 미만일때 */
+@media all and (max-width:735px){
+  #name{
+    margin-top:62px;
+  }
+  #ids,#pws{
+    zoom:1;
+  }
+  #content_slide {
+    height:60%;
+  }
+  .slide_btn a:first-child,
+  .slide_btn a:last-child{
+    top:50%;
+  }
+}
