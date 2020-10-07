@@ -1,0 +1,145 @@
+/* store visual */
+#store_visual{
+    width:100%;
+    padding-top:120px;
+}
+#store_visual img{
+    width:100%;
+}
+/* map */
+.map_wrap{
+    width:80%;
+    height:50%;
+    padding:10% 0 10%;
+    margin:0 auto;
+}
+.marker{
+    font-size:3vw;
+    font-family:'Noto Sans KR';
+}
+/* store title */
+#name{
+    padding:10% 0 10%;
+}
+#name .kor{
+    font-size: 7vw;
+    text-align: center;
+}
+/* gps */
+.my_position{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  
+    -webkit-box-align:center;
+    -moz-box-align:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+    align-items: center;
+
+    width:70%;
+    margin:0 auto;
+    padding:3% 2%;
+    border:1px solid #aaa;
+    margin-bottom:5%;
+    margin-top:5%;
+}
+.my_position > a{
+    padding:2%;
+    font-size:4vw;
+}
+.my_position > .store_map_icon{
+    width:8%;
+}
+.my_position > .store_map_icon img{
+    width:100%;
+}
+/* store search */
+.search_store{
+    padding:5% 0 5%;
+    background:#eee;
+}
+.search_store fieldset{
+    width:90%;
+    margin:0 auto;
+}
+    /* search text input */
+.search_store fieldset input[type="text"]{
+    width:80%;
+    height:11vw;
+    border:0px;
+    border-radius:5vw;
+    float:left;
+    text-align:center;
+    font-size: 4vw;
+    outline:none;
+    box-shadow: 3px 3px 20px #E0E0E0;
+}
+    /* search submit input  */
+.search_store fieldset input[type="image"]{
+    width:12%;
+    float:right;
+    outline:none;
+}
+/* store list */
+.store_list{
+    background:#eee;
+    padding:5% 0 5%;
+}
+.store_list > ul{
+    width:90%;
+    margin:0 auto;
+}
+.store_list > ul:first-child >li{
+    padding:5%;
+    background:#fff;
+    margin-bottom:5%;
+    border-radius: 2vw;
+    box-shadow:3px 3px 20px #e0e0e0;
+}
+    /* store list title*/
+.store_list h3{
+    padding:3% 0 3%;
+}
+    /* store list content*/
+.store_list p{
+    font-size:3vw;
+    padding:3% 0 3%;
+}
+/* store list btn */
+.store_list .store_list_btn{
+    text-align:center;
+    padding:5% 0 10%;
+}
+.store_list .store_list_btn a{
+    font-size:3vw;
+    display:inline-block;
+}
+.store_list .store_list_btn a img{
+    vertical-align:middle;
+}
+.store_list .store_list_btn span a{
+    border:1px solid #eee;
+    background:#fff;
+    padding: 2% 3% 2% 3%;
+    box-sizing:border-box;
+    border-radius: 1vw;
+}
+    /* store list btn active */
+.store_list .store_list_btn span a.active{
+    background:#373737;
+    color:#fff;
+}
+/* width 735px 미만일때 */
+@media all and (max-width:735px){
+    #store_visual{
+        padding-top:62px;
+    }
+}
