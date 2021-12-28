@@ -1109,8 +1109,6 @@
 
 				x = el.childNodes[0].nodeValue;
 				x = x.substring(0, 1);
-
-				console.log(Number(x));
 				//가격
 				el2 = element.parentNode.previousSibling;
 				el2 = el2.previousSibling;
@@ -1122,7 +1120,6 @@
 				y = y.split(',');
 				//제거후 합치기
 				y = y.join('');
-				console.log(y)
 				if (y == 0) {
 					const rbs = el2.querySelectorAll('.Peace');
 					for (const rb of rbs) {
@@ -1132,7 +1129,6 @@
 						}
 					}
 				}
-				console.log(y);
 				pCost = Number(x) * Number(y);
 
 				if (element.checked == 1) {
@@ -1154,16 +1150,13 @@
 			element.addEventListener('click', function (e) {
 				e.preventDefault();
 				index++;
-				console.log(index);	
 				num = element.previousSibling;
 				num = num.previousSibling;
 				num.childNodes[0].nodeValue = index + '개';
-				console.log(y)
 				let this_input = element.parentNode.parentNode.querySelector('input[type="checkbox"]');
 				if (this_input.checked) {
-					
+
 					totalCost += Number(y);
-					console.log(totalCost+'총금액')
 					totalCount.innerHTML = totalCost + '원';
 				}
 			})
@@ -1173,12 +1166,10 @@
 			element.addEventListener('click', function (e) {
 				e.preventDefault();
 				index--;
-				console.log(index);	
 				if (index < 1) { index = 1 };
 				num = element.nextSibling;
 				num = num.nextSibling;
 				num.childNodes[0].nodeValue = index + '개';
-				console.log(y)
 				let this_input = element.parentNode.parentNode.querySelector('input[type="checkbox"]');
 				if (this_input.checked) {
 					totalCost -= Number(y);
@@ -1188,16 +1179,16 @@
 			})
 		})
 		//radio_box 
-		radio_box.forEach(function(element){
-			element.addEventListener('click',function(el){
+		radio_box.forEach(function (element) {
+			element.addEventListener('click', function (el) {
 				y = element.value;
 				this_put_in = element.parentNode.parentNode.parentNode;
-				
-				this_put_in= this_put_in.querySelector('#put_in');
 
-				if(this_put_in.checked == 1){
-					index=1;
-					totalCost += y*index;
+				this_put_in = this_put_in.querySelector('#put_in');
+
+				if (this_put_in.checked == 1) {
+					index = 1;
+					totalCost += y * index;
 					totalCount.innerHTML = totalCost + '원';
 					num.childNodes[0].nodeValue = index + '개';
 				}

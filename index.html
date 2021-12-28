@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<title>맘스터치메인</title>
 	<link rel="stylesheet" href="css/common.css">
@@ -76,16 +76,24 @@
 				</a>
 			</div>
 			<ul class="product_list clear">
-				<li><a href="detail1.html" data-index='0' data-detail="1"><img src="img/cont2_img1.png" alt="코울슬로와 특제 핫치킨소스의 만남! 내슈빌핫치킨"></a></li>
-				<li><a href="detail2.html" data-index='0' data-detail="2"><img src="img/cont2_img2.png" alt="매콤한 특제 핫치킨소스의 풍미! 내슈빌핫통다리"></a></li>
-				<li><a href="detail2.html" data-index='1' data-detail="2"><img src="img/cont2_img3.png" alt="간장&마늘의 진한 풍미! 간장마늘 치킨"></a></li>
-				<li><a href="detail1.html" data-index='3' data-detail="1"><img src="img/cont2_img4.png" alt="쉬림프,통가슴살패티 에그의 환상적인 조합! 언빌리버블버거"></a></li>
+				<li><a href="detail1.html" data-index='0' data-detail="1"><img src="img/cont2_img1.png"
+							alt="코울슬로와 특제 핫치킨소스의 만남! 내슈빌핫치킨"></a></li>
+				<li><a href="detail2.html" data-index='0' data-detail="2"><img src="img/cont2_img2.png"
+							alt="매콤한 특제 핫치킨소스의 풍미! 내슈빌핫통다리"></a></li>
+				<li><a href="detail2.html" data-index='1' data-detail="2"><img src="img/cont2_img3.png"
+							alt="간장&마늘의 진한 풍미! 간장마늘 치킨"></a></li>
+				<li><a href="detail1.html" data-index='3' data-detail="1"><img src="img/cont2_img4.png"
+							alt="쉬림프,통가슴살패티 에그의 환상적인 조합! 언빌리버블버거"></a></li>
 			</ul>
 			<ul class="product_list clear">
-				<li><a href="detail1.html" data-index='9' data-detail="1"><img src="img/cont2_img5.png" alt="매콤한 통닭다리살 맘스터치 시그니처버거 싸이버거"></a></li>
-				<li><a href="detail2.html" data-index='4' data-detail="1"><img src="img/cont2_img6.png" alt="크고 확실한 행복 놀라운 대확행 인크레더블버거"></a></li>
-				<li><a href="detail2.html" data-index='6' data-detail="1"><img src="img/cont2_img7.png" alt="부드러운 치즈와 한층더 촉촉해진 닭가슴살 딥치즈버거"></a></li>
-				<li><a href="detail1.html" data-index='7' data-detail="1"><img src="img/cont2_img8.png" alt="불맛이 살아있는 싸이버거의 진화 매운싸이버거 불싸이버거"></a></li>
+				<li><a href="detail1.html" data-index='9' data-detail="1"><img src="img/cont2_img5.png"
+							alt="매콤한 통닭다리살 맘스터치 시그니처버거 싸이버거"></a></li>
+				<li><a href="detail2.html" data-index='4' data-detail="1"><img src="img/cont2_img6.png"
+							alt="크고 확실한 행복 놀라운 대확행 인크레더블버거"></a></li>
+				<li><a href="detail2.html" data-index='6' data-detail="1"><img src="img/cont2_img7.png"
+							alt="부드러운 치즈와 한층더 촉촉해진 닭가슴살 딥치즈버거"></a></li>
+				<li><a href="detail1.html" data-index='7' data-detail="1"><img src="img/cont2_img8.png"
+							alt="불맛이 살아있는 싸이버거의 진화 매운싸이버거 불싸이버거"></a></li>
 			</ul>
 		</div>
 	</div><!-- content end -->
@@ -157,12 +165,10 @@
 	<!-- product_list move js -->
 	<script>
 		$(function () {
-			$('.product_list > li > a').click(function(event){
+			$('.product_list > li > a').click(function (event) {
 				event.preventDefault();
-				let itemIndex = $(this).attr('data-index');	
+				let itemIndex = $(this).attr('data-index');
 				let detailIndex = $(this).attr('data-detail');
-				console.log(itemIndex);
-				console.log(detailIndex);
 				location.href = "detail" + detailIndex + ".html?itemindex=" + itemIndex;
 			})
 		})
@@ -172,11 +178,11 @@
 	<!-- window fixed size js  -->
 	<script>
 		// Defining event listener function
-		function displayWindowSize(){
-        // Get width and height of the window excluding scrollbars
-        var w = 414;
-        var h = 736;
-        window.resizeTo(414, 736);
+		function displayWindowSize() {
+			// Get width and height of the window excluding scrollbars
+			var w = 414;
+			var h = 736;
+			window.resizeTo(414, 736);
 		}
 		// Calling the function for the first time
 		displayWindowSize();
